@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Maquette Responsive</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #EFEFEF;
+  }
+  header {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  img {
+    width: 100%;
+  }
+  @media screen and (min-width: 1024px) {
+    h1 {
+      color: rgb(205, 205, 205);
+      padding-top: 1%;
+      padding-left: 1%;
+    }
+    h2, p {
+      padding : 20px;
+    }
+    .image {
+      margin-bottom: 5%;
+      width: 40%;
+      display: inline-block;
+      margin-left: 10%;
+      /*border: 1px solid red;*/
+    }
+    .presentation {
+      width: 40%;
+      height: 400px;
+      display: inline-block;
+      position: absolute;
+    }
+    .blocTout {
+      width: 100%;
+      position: relative;
+    }
+    #blocTout1 {
+      text-align: center;
+    }
+    #presentation1 {
+      position:static;
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 1em;
+      color: white;
+      background-color: #666666;
+    }
+    #presentation1 > p {
+      width: 50%;
+      margin: auto;
+    }
+    #presentation1 > h2 {
+      padding: 10px;
+    }
+    #blocImage1 {
+      width: 50%;
+      margin: 0;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+
+    .blocTout{
+      width: 45%;
+      display: inline-block;
+      margin-top: 20px;
+      /*border: 1px solid red;*/
+    }
+    header {
+      background-color: #666666;
+    }
+    h1 {
+      color: white;
+      padding: 3%;
+    }
+    .image > img {
+      width: 100%;
+      border: 1px solid black;
+    }
+    .image {
+      /*border: 1px solid green;*/
+    }
+    .presentation {
+      padding: 10px;
+      text-align: center;
+    }
+    p {
+      margin-top: 10px;
+      /*height: 500px;*/
+    }
+    article {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px){
+    /*article {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding-left: 5%;
+    }*/
+    .blocTout {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      flex-direction: column;
+    }
+    p {
+      visibility: hidden;
+    }
+    .presentation {
+      height: 50px;
+    }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galerie</h1>
+  </header>
+  <article>
+  <div class="blocTout" id="blocTout1">
+    <div class="image" id="blocImage1"><img src="image1.jpg" alt="une_image" id="image1"/></div>
+    <div class="presentation" id="presentation1">
+      <h2>Chiot labrador</h2>
+      <p> C'est tout mignon choubidou. Jusqu'à l'âge de 3 ans, c'est qunad même bien
+        bien bien relou. Oublie tes chaussures, ton joli canapé et les bibelots.
+        N'oublie pas de fermer la porte de la cuisine sinon ton frigo va certainement y
+        passer. La poubelle aussi d'ailleurs.
+        C'est mignon mais c'est pas un jouet en fait.</p>
+      </div>
+    </div>
+    <div class="blocTout">
+      <div class="image"><img src="image2.jpg" alt="une_image" id="image2"/></div>
+      <div class="presentation">
+        <h2>Joli Labrador bouffeur de carottes</h2>
+        <p>Les labradors sont connus pour leur gourmandise. Leur donner des légumes
+          est un bon moyen de les rassasier sans pour autant les faire grossir.
+          Ils sont aussi célèbres pour leur embompoint fréquent.
+          Les haricots verts cuits, les carottes mixées crues ou même les courgettes sont
+          permettent de remplir l'estomac sans surcharge en calories.</p>
+        </div>
+      </div>
+      <div class="blocTout">
+        <div class="image"><img src="image3.jpg" alt="une_image" id="image3"/></div>
+        <div class="presentation">
+          <h2>Basset Hound blasé</h2>
+          <p>Le basset hound est le chien raleur par excellence. C'est un chien très expressif,
+            très proche de son maître et très gourmand. En tant que chien de chasse, c'est aussi un
+            chien relativement aboyeur et dont l'aboiement est très caractéristique.
+            Malgré ses courtes pattes, c'est un chien sportif et qui a besoin de se dépenser dans
+            la journée.</p>
+          </div>
+        </div>
+        <div class="blocTout">
+          <div class="image"><img src="image4.jpg" alt="une_image" id="image4"/></div>
+          <div class="presentation">
+            <h2>Couple de chiens norvégiens de macareux</h2>
+            <p>Je ne connais pas ces chiens mais, mais ils sont quand même sacrément mignons
+              Prendre ce genre de photos n'est quand même pas facile et le photographe a du
+              s'y reprendre à plusieurs fois. Il faut broder un petit peu quand même.
+              Je vais pas chanter la reine des neige, faut pas déconner !</p>
+            </div>
+          </div>
+          <div class="blocTout">
+            <div class="image"><img src="image6.jpg" alt="une_image" id="image6"/></div>
+            <div class="presentation">
+              <h2>Chiot terre neuve</h2>
+              <p>Les terres neuves ont les pattes palmées. Ce sont des chiens d'eau.
+                Grâce à leur sous poil, l'eau n'arrive jamais directement sur leur peau. Ils supportent
+                des températures en dessous de zéro et étaient utilisés comme chien secouristes en mer.
+              </p>
+            </div>
+          </div>
+        </article>
+        </body>
+        </html>
